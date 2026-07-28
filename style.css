@@ -81,3 +81,93 @@ height:7px;
 background:linear-gradient(90deg,#E7D5A2,#CFAE63,#E7D5A2);
 
 }
+/* ========= TITLES ========= */
+
+.chapter{
+font-size:15px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#b39b67;
+text-align:center;
+margin-bottom:18px;
+font-family:'Inter',sans-serif;
+}
+
+.title{
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+font-weight:600;
+text-align:center;
+line-height:1.05;
+color:#2f2925;
+margin-bottom:18px;
+}
+
+.gold-line{
+width:140px;
+height:3px;
+margin:0 auto 35px;
+border-radius:10px;
+background:linear-gradient(90deg,#E8D7A5,#CDAA63,#E8D7A5);
+}
+
+/* ========= TEXT ========= */
+
+.intro{
+font-size:25px;
+line-height:1.55;
+text-align:center;
+color:#645a52;
+margin-bottom:42px;
+}
+
+.question{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+line-height:1.35;
+text-align:center;
+margin-bottom:45px;
+color:#2d2925;
+}
+
+/* ========= BUTTONS ========= */
+
+.button{
+
+display:block;
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+border-radius:18px;
+
+background:linear-gradient(90deg,#DDBE76,#CDA75A);
+
+color:white;
+
+font-size:18px;
+
+font-weight:500;
+
+cursor:pointer;
+
+transition:.35s;
+
+text-decoration:none;
+
+text-align:center;
+
+margin-top:18px;
+
+}
+
+.button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 25px rgba(205,167,90,.35);
+
+}
