@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beginning</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f6f2eb;
+font-family:'Inter',sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:25px;
+}
+
+.card{
+background:white;
+max-width:720px;
+width:100%;
+padding:45px;
+border-radius:24px;
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+animation:fade 1.2s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.small{
+text-align:center;
+letter-spacing:4px;
+color:#b7a57a;
+font-size:12px;
+margin-bottom:12px;
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:52px;
+font-weight:600;
+text-align:center;
+margin-bottom:30px;
+color:#2f2f2f;
+}
+
+.line{
+width:70px;
+height:2px;
+background:#d8c49a;
+margin:0 auto 35px;
+}
+
+.text{
+font-size:18px;
+line-height:1.9;
+color:#555;
+}
+
+button{
+margin-top:35px;
+width:100%;
+padding:16px;
+font-size:16px;
+background:#c8a96d;
+color:white;
+border:none;
+border-radius:14px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#b99655;
+}
+
+.translation{
+display:none;
+margin-top:28px;
+padding-top:25px;
+border-top:1px solid #ececec;
+font-size:18px;
+line-height:1.9;
+}
+
+.footer{
+margin-top:45px;
+text-align:center;
+font-size:13px;
+color:#999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="small">
+OUR STORY
+</div>
+
+<h1>
+Beginning
+</h1>
+
+<div class="line"></div>
+
+<div class="text">
+
+Here will be your English message...
+
+</div>
+
+<button onclick="showTranslation()">
+Show Chinese Translation
+</button>
+
+<div class="translation" id="translation">
+
+这里将放你的中文翻译。
+
+</div>
+
+<div class="footer">
+Made with love 🤍
+</div>
+
+</div>
+
+<script>
+function showTranslation(){
+document.getElementById("translation").style.display="block";
+}
+</script>
+
+</body>
+</html>
